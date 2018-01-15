@@ -43,8 +43,8 @@ public class TestBase {
 	}// test base constructor
 
 	public static void initialization(){
-		//String browserName = prop.getProperty("browser");
-		String browserName = "chrome";
+		String browserName = prop.getProperty("browser");
+		//String browserName = "chrome";
 		if(browserName.equals("chrome")) {			
 			System.setProperty("webdriver.chrome.driver", chromePath);
 			driver = new ChromeDriver();
