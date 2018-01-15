@@ -27,9 +27,10 @@ public class TestBase {
 		try{
 			prop=new Properties();
 			
+			//C:\Users\srida\.jenkins\workspace\freeCRMtest_github\CRMTest\src\main\java\com\crm\qa\config
 			//FileInputStream ip= new FileInputStream("C:/Ecipse/selenium Luna/Projects/CRMTest/src/main/java/com/crm/qa/config/config.properties");	
-			FileInputStream ip= new FileInputStream("C:/Users/srida/git/freeCRMtest/CRMTest/src/main/java/com/crm/qa/config/config.properties");
-			
+			//FileInputStream ip= new FileInputStream("C:/Users/srida/git/freeCRMtest/CRMTest/src/main/java/com/crm/qa/config/config.properties");
+			FileInputStream ip= new FileInputStream("C:\Users\srida\.jenkins\workspace\freeCRMtest_github\CRMTest\src\main\java\com\crm\qa\config");
 			prop.load(ip);	
 			}catch (FileNotFoundException e) {
 				System.out.println("FileNotFoundException");
